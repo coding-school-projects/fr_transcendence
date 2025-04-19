@@ -1,5 +1,3 @@
-# fr_transcendence
-
 # ft_transcendence
 
 ![Pong Game](https://via.placeholder.com/150) <!-- Replace with actual game screenshot -->
@@ -44,3 +42,12 @@ This project is a surprise challenge that involves creating a website for the cl
 1. Clone the repository:
    ```bash
    git clone https://github.com/coding-school-projects/ft_transcendence.git
+
+2. Navigate to the project directory:
+   cd ft_transcendence
+
+3. Build and run with Docker:
+   docker-compose up --build
+
+4. Open https://localhost in Firefox (or your preferred browser).
+
