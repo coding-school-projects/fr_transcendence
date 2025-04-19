@@ -1,55 +1,133 @@
-# ft_transcendence
+<h1 align="center">
+  <img src="https://github.com/senthilpoo10/badges/blob/main/badges/ft_transcendencem.png" width="200"/>
+</h1>
 
-![Pong Game](https://via.placeholder.com/150) <!-- Replace with actual game screenshot -->
+<p align="center">
+  <b><i>The Ultimate Pong Experience</i></b><br>
+  <i>"It's time to shine!"</i>
+</p>
 
-## Summary
-This project is a surprise challenge that involves creating a website for the classic **Pong** game with modern twists. The goal is to build a real-time multiplayer Pong game with a user-friendly interface, while exploring unfamiliar technologies and adhering to strict guidelines. The project includes a mandatory core and optional modules to enhance functionality.
+<p align="center">
+  <img alt="score" src="https://img.shields.io/badge/score-125%2F100-brightgreen" />
+  <img alt="team" src="https://img.shields.io/badge/team-4%20members-yellow" />
+  <img alt="time spent" src="https://img.shields.io/badge/time%20spent-300%20hours-blue" />
+  <img alt="XP earned" src="https://img.shields.io/badge/XP%20earned-2016-orange" />
+<p align="center">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/coding-school-projects/ft_transcendence?color=lightblue" />
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/coding-school-projects/ft_transcendence?color=blue" />
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/coding-school-projects/ft_transcendence?color=green" />
+</p>
 
----
+## 📚 About The Project
 
-## Features
-### Mandatory Part
-- **Real-time Pong Game**: Play Pong against another player on the same keyboard.
-- **Tournament System**: Organize matches between multiple players with a matchmaking system.
-- **Single-Page Application (SPA)**: Built with TypeScript for the frontend and optionally PHP for the backend.
-- **Docker Integration**: Run the entire project with a single command.
-- **Security**: HTTPS, password hashing, and protection against SQL/XSS attacks.
+ft_transcendence is 42 School's final web project that reimagines the classic Pong game with modern web technologies. This full-stack application combines real-time multiplayer gameplay with social features, tournament systems, and cutting-edge web development practices.
 
-### Optional Modules (Minimum 7 Major Modules Required)
-- **Web**: Backend framework (Fastify + Node.js), frontend toolkit (Tailwind CSS), database (SQLite), or blockchain (Avalanche) for score storage.
-- **User Management**: Standard authentication or remote login (Google Sign-in).
-- **Gameplay Enhancements**: Remote/multiplayer modes, live chat, or add a second game.
-- **AI Opponent**: Implement a non-A* AI with simulated keyboard input.
-- **Cybersecurity**: WAF/ModSecurity, HashiCorp Vault, 2FA, and GDPR compliance.
-- **DevOps**: ELK stack for logs, Prometheus/Grafana for monitoring, or microservices.
-- **Graphics**: Advanced 3D Pong using Babylon.js.
-- **Accessibility**: Multi-language support, screen reader compatibility, or SSR.
-- **Server-Side Pong**: Replace client-side Pong with server logic and CLI integration.
+**Key Features:**
+- Real-time Pong with WebSocket communication
+- Tournament system with matchmaking
+- User authentication (local + OAuth)
+- Live chat with direct messaging
+- AI opponent with adaptive difficulty
+- Blockchain-based score tracking (bonus)
+- 3D-rendered Pong (bonus)
 
----
+## 🏁 Getting Started
 
-## Technologies
-- **Frontend**: TypeScript, Tailwind CSS (optional module).
-- **Backend**: Pure PHP (default) or Fastify + Node.js (optional module).
-- **Database**: SQLite (optional module).
-- **Blockchain**: Avalanche + Solidity (optional module).
-- **Containerization**: Docker.
-- **Security**: HTTPS, JWT, 2FA, WAF.
+### 🛠️ Installation & Setup
 
----
-
-## Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/coding-school-projects/ft_transcendence.git
+```bash
+git clone https://github.com/coding-school-projects/ft_transcendence.git
+cd ft_transcendence
+```
 
-2. Navigate to the project directory:
-   ```bash
-   cd ft_transcendence
+2. Set up environment variables:
+```bash
+cp .env.example .env
+# Fill in your credentials
+```
 
-3. Build and run with Docker:
-   ```bash
-   docker-compose up --build
+3. Start with Docker:
+```bash
+docker-compose up --build
+```
 
-6. Open https://localhost in Firefox (or your preferred browser).
+4. Access the application:
+```
+https://localhost:3000
+```
+
+### 🎮 Running the Project
+
+**Basic Usage:**
+1. Register or log in (supports Google OAuth)
+2. Navigate to the game section
+3. Play local Pong or join a tournament
+4. Chat with other players in real-time
+
+**Admin Commands:**
+```bash
+docker-compose exec backend npm run migrate
+docker-compose exec backend npm run seed
+```
+
+## 🧠 Technical Implementation
+
+### Core Architecture
+| Component | Technology | Description |
+|-----------|------------|-------------|
+| Frontend | React/TypeScript | Single-page application with Tailwind CSS |
+| Backend | NestJS (Fastify) | Microservice architecture |
+| Database | PostgreSQL | Persistent data storage |
+| Real-time | Socket.io | Game state and chat synchronization |
+| Auth | JWT + OAuth2 | Secure authentication |
+| Blockchain | Avalanche (testnet) | Tournament score storage |
+
+### Implemented Modules
+1. **Web Framework** (NestJS/Fastify)
+2. **User Management** (Local + Google Auth)
+3. **Remote Players** (WebSocket multiplayer)
+4. **Live Chat**
+5. **AI Opponent**
+6. **Cybersecurity** (WAF + 2FA)
+7. **3D Graphics** (Babylon.js)
+8. **Blockchain Integration** (Avalanche)
+
+## 🧪 Testing Protocol
+
+1. Basic functionality test:
+```bash
+curl -k https://localhost:3000/api/health
+```
+
+2. Gameplay test:
+- Open two browsers and play Pong
+- Verify tournament progression
+
+3. Security tests:
+```bash
+npm run test:e2e
+```
+
+4. Blockchain verification:
+```bash
+npm run test:blockchain
+```
+
+## 📝 Evaluation Criteria
+
+1. **Functionality**: All mandatory features working
+2. **Performance**: Smooth real-time gameplay
+3. **Security**: No vulnerabilities detected
+4. **Code Quality**: Clean, documented, norm-compliant
+5. **Bonus**: Additional modules implemented
+
+### 🧑‍💻 Peer Evaluations (3/3)
+
+> **Peer 1**: " "
+
+> **Peer 2**: " "
+
+> **Peer 3**: " "
+
 
