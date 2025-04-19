@@ -44,10 +44,12 @@ This project is a surprise challenge that involves creating a website for the cl
    git clone https://github.com/coding-school-projects/ft_transcendence.git
 
 2. Navigate to the project directory:
+   ```bash
    cd ft_transcendence
 
 3. Build and run with Docker:
+   ```bash
    docker-compose up --build
 
-4. Open https://localhost in Firefox (or your preferred browser).
+6. Open https://localhost in Firefox (or your preferred browser).
 
