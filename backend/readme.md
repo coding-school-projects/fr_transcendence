@@ -1163,4 +1163,3 @@ NODE_ENV=production npm start
 **For more information, see the [main README](../README.md) and [frontend README](../frontend/README.md)**
 ```
 
-Save this as `pong-app/backend/README.md`. Would you like me to create the Frontend README next?
