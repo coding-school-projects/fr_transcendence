@@ -21,6 +21,9 @@ Node.js backend server providing REST API and real-time game services for the Po
 ### Project Structure
 
 ```
+## Project Structure
+
+```plaintext
 backend/
 ├── src/
 │   ├── routes/              # API endpoint handlers
@@ -52,6 +55,7 @@ backend/
 ├── Dockerfile
 ├── package.json
 └── tsconfig.json
+
 ```
 
 ## 🚀 Getting Started
